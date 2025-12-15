@@ -11,7 +11,7 @@ USER node
 WORKDIR /app
 
 # 先复制依赖描述文件和 npm 配置（关键）
-COPY --chown=node:node package.json package-lock.json ./
+COPY --chown=node:node package.json ./
 COPY --chown=node:node .npmrc ./
 
 # 安装依赖（生产环境常用参数）
