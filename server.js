@@ -204,7 +204,7 @@ async function consturctServer(moduleDefs) {
  * @returns {Promise<import('express').Express & ExpressExtension>}
  */
 async function startService() {
-  const port = Number(process.env.PORT || '3000');
+  const port = Number(process.env.PORT || '7777');
   const host = process.env.HOST || '';
 
   const app = await consturctServer();
